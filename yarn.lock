@@ -3672,6 +3672,11 @@ globby@^11.0.1, globby@^11.0.2:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
+goober@^2.1.10:
+  version "2.1.12"
+  resolved "https://registry.npmjs.org/goober/-/goober-2.1.12.tgz#6c1645314ac9a68fe76408e1f502c63df8a39042"
+  integrity sha512-yXHAvO08FU1JgTXX6Zn6sYCUFfB/OJSX8HHjDSgerZHZmFKAb08cykp5LBw5QnmyMcZyPRMqkdyHUSSzge788Q==
+
 gopd@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
@@ -5436,6 +5441,14 @@ solid-refresh@^0.5.0:
     "@babel/generator" "^7.21.1"
     "@babel/helper-module-imports" "^7.18.6"
     "@babel/types" "^7.21.2"
+
+solid-styled-components@^0.28.5:
+  version "0.28.5"
+  resolved "https://registry.npmjs.org/solid-styled-components/-/solid-styled-components-0.28.5.tgz#ea6ddc6ccf34097392f9dd603dd88d2259d5226e"
+  integrity sha512-vwTcdp76wZNnESIzB6rRZ3U55NgcSAQXCiiRIiEFhxTFqT0bEh/warNT1qaRZu4OkAzrBkViOngF35ktI8sc4A==
+  dependencies:
+    csstype "^3.1.0"
+    goober "^2.1.10"
 
 source-map-js@^1.0.2:
   version "1.0.2"

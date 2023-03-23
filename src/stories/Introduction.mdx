@@ -1,11 +1,58 @@
-import { Meta } from "@storybook/blocks";
+import { Meta } from '@storybook/blocks';
 
 <Meta title="Introduction" />
 
 # Welcome to Storybook SolidJS Sandbox
 
-This sandbox is for testing documentation SolidJS code snippets. This feature is being
-handled under the following issues codes:
+This sandbox is for testing documentation SolidJS code snippets. This feature is related to the following issues codes:
 
 - [Code snippets for solid #21207](https://github.com/storybookjs/storybook/pull/21207)
 - [Solid frontpage integration #490](https://github.com/storybookjs/frontpage/pull/490)
+
+List of stories that test the respective code snippet
+(<code>.js</code> mdx is implicity tested with <code>.(ts|tsx)</code> story):
+
+<table>
+  <thead>
+    <tr>
+      <th>Story</th>
+      <th>Code Snippet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>Histogram.stories.ts</code>
+      </td>
+      <td>
+        <code>solid/histogram-story.ts.mdx</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>Button.stories.tsx</code>
+      </td>
+      <td>
+        <code>solid/button-story.ts.mdx</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>ButtonWithArgs.stories.tsx</code>
+      </td>
+      <td>
+        <code>solid/button-story-with-args.ts.mdx</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.storybook/preview.tsx</code>
+      </td>
+      <td>
+        <code>
+          solid/storybook-preview-with-styled-components-decorator.ts.mdx
+        </code>
+      </td>
+    </tr>
+  </tbody>
+</table>

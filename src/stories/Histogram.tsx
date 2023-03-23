@@ -1,4 +1,4 @@
-import { Component, Show } from "solid-js";
+import { Component, Show } from 'solid-js';
 
 export interface HistogramProps {
   dataType: string;
@@ -14,9 +14,7 @@ export const Histogram: Component<HistogramProps> = (props) => {
       <Show when={props.showHistogramLabels}>
         <p>showHistogramLabels</p>
       </Show>
-      <p style={`color: ${props.histogramAccentColor}`}>
-        histogramAccentColor: {props.histogramAccentColor}
-      </p>
+      <p style={`color: ${props.histogramAccentColor}`}>histogramAccentColor: {props.histogramAccentColor}</p>
       <p>label: {props.label}</p>
     </>
   );
