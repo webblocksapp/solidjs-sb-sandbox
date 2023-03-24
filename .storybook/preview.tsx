@@ -1,8 +1,7 @@
 import { Preview } from 'storybook-solidjs';
 import { ThemeProvider } from 'solid-styled-components';
 
-//TODO: Preview type needs to be added at storybook-solidjs
-//TODO: .storybook/tsconfig.json needs to be added at storybook-solidjs.
+//TODO: .storybook/tsconfig.json needs to be added automatically by sb init.
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
