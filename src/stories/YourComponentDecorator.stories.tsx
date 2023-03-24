@@ -1,15 +1,23 @@
-// Button.stories.ts|tsx
-import { Meta } from 'storybook-solidjs';
+// YourComponent.stories.ts|tsx
+
+import type { Meta } from 'storybook-solidjs';
+
 import { Button } from './Button';
 
-//TODO: Default export syntax not working
 const meta: Meta<typeof Button> = {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/7.0/solid/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'ButtonDefaultExport',
+  title: 'YourComponent',
   component: Button,
+  decorators: [
+    (Story) => (
+      <div style={{ margin: '3em' }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default meta;
