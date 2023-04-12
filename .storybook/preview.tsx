@@ -1,7 +1,9 @@
 import { Preview } from 'storybook-solidjs';
 import { ThemeProvider } from 'solid-styled-components';
+import { initialize, mswDecorator } from 'msw-storybook-addon';
 
-//TODO: .storybook/tsconfig.json needs to be added automatically by sb init.
+initialize({ onUnhandledRequest: 'bypass' });
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -13,6 +15,7 @@ const preview: Preview = {
     },
   },
   decorators: [
+    mswDecorator,
     (Story) => (
       <ThemeProvider
         theme={{
