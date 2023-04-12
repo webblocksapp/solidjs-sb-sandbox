@@ -23,3 +23,8 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
+  args: { label: 'Submit' },
+  render: (args) => <Button {...args} />,
+};

@@ -21,3 +21,7 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
+
+export const Primary = {
+  render: () => <Button primary label="Button" />,
+};

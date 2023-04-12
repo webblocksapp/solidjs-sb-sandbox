@@ -15,6 +15,7 @@ export default {
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
+  args: { label: 'Hello World' },
   decorators: [
     (Story) => (
       <div style={{ margin: '3em' }}>
